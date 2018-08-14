@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formular</title>
+</head>
+<body>
+	<h1>Formular zur Kundenbefragung</h1>
+	<form name="form1" method="post" enctype="text/plain" action="mailto:annadanisevskaja@gmail.com">
+		<!-- Persenal data -->
+		<p>
+			<label for="vorname">Vorname</label>
+				<input type="text" name="prename" id="vorname">
+		</p>
+		<p>
+			<label for="nachname">Name</label>
+				<input type="text" name="name" id="nachname">
+		</p>
+		<p>
+			<label for="adresse">Adresse</label>
+				<input type="text" name="address" id="adresse">
+		</p>
+		<!-- Geschlecht -->
+		<p>Ich bin
+			<label for="frau">Frau</label><input type="radio" name="Geschlecht" value="female" id="weiblich">
+			<label for="herr">Herr</label><input type="radio" name="Geschlecht" value="male" id="maennlich">
+		</p>
+		<p>
+			<label for="messe">Sie haben bei folgender Messe teilgenommen:</label>
+				<select name="messenliste" id="messe">
+					<option>in Karlsruhe "Erfolgreiche Marketing"</option>
+					<option>in Hannover "Transparente Betriebswege"</option>
+					<option>in Dresden "Umsatz-Steigerung & Kundenzufriedenheit"</option>
+				</select>
+		</p>		
+		<p>ch moechte naechste Einladung erhalten per:</p>
+		<p>
+			<label for="sms">SMS</label>
+				<input type="checkbox" name="persms" value="mitsms" id="sms">
+			<label for="email">E-Mail</label>
+				<input type="checkbox" name="peremail" value="mitemail" id="email">	
+			<label for="call">Anruf</label>
+				<input type="checkbox" name="peranruf" value="peranruf" id="call">
+		</p>
+		<p>
+			<input type="submit" name="button" id="sende" value="Senden">	
+			<input type="reset" name="button2" id="loeschen" value="Zuruecksenden">
+		</p>
+	</form>
+</body>
+</html>
